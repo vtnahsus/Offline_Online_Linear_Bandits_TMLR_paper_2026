@@ -27,9 +27,10 @@ if __name__ == "__main__":
     T_off_max = 100000
     n_support = 40
     n_runs = 50 
+    mode= "Uniform"
     
     print("Generating Environment for Figure 1...")
-    theta, A, optimal_arm, _ = problem_generation(d, K)
+    theta, A, optimal_arm, _ = problem_generation(d, K, mode)
     # Generate fixed partition using the largest Toff
     offline_frac_dict, _, V_pi_o, non_zero_arm = offline_data_generation(T_off_max, n_support, theta, A, d)
 
