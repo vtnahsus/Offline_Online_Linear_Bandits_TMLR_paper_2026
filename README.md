@@ -45,3 +45,21 @@ python scripts/run_fig4.py
 
 ## ⚖️ License
 This project is licensed under the Apache 2.0 License - see the LICENSE file for details.
+
+## 🗂️ Repository Structure
+
+The code is modularized for ease of use and readability:
+
+```text
+├── src/
+│   ├── __init__.py
+│   ├── utils.py          # Environment simulation, sub-optimality gaps, offline data generation
+│   └── algorithms.py     # Core algorithms: OOPE, OOPE-FW, Warm-started LinUCB & LinTS
+├── scripts/
+│   ├── run_fig1.py       # Exp 1: Performance with increasing offline data
+│   ├── run_fig2.py       # Exp 2: Comparison against LinUCB and LinTS baselines
+│   ├── run_fig3.py       # Exp 3: Performance of OOPE vs OOPE-FW
+│   └── run_fig4.py       # Exp 4: Regret difference over effective dimension (d_eff)
+├── requirements.txt      # Python dependencies
+└── README.md
+
