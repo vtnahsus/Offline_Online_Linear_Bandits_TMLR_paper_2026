@@ -6,7 +6,7 @@ Code for experiments run in the Offline to Online in Linear Bandits paper.
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 This repository contains the official implementation of the paper:
-**"Regret minimization in Linear Bandits with offline data via extended D-optimal exploration"** *(Under review at TMLR)*.
+**"Regret minimization in Linear Bandits with offline data via extended D-optimal exploration"** *(Accepted at TMLR)*.
 
 It provides the code to reproduce all theoretical bounds and numerical experiments presented in the paper, including the **Offline-Online Phased Elimination (OOPE)** algorithm and its Frank-Wolfe variant (**OOPE-FW**).
 
