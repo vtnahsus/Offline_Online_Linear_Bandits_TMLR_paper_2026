@@ -16,6 +16,7 @@ We consider the problem of online regret minimization in stochastic linear bandi
 
 ## ⚙️ Installation
 To run the code, you will need Python 3.8 or higher. We recommend using a virtual environment.
+
 Clone the repository:
 
 git clone https://github.com/vtnahsus/Offline_Online_Linear_Bandits_TMLR_paper_2026.git
@@ -23,26 +24,32 @@ git clone https://github.com/vtnahsus/Offline_Online_Linear_Bandits_TMLR_paper_2
 cd Offline_Online_Linear_Bandits_TMLR_paper_2026
 
 Install the required packages:
+
 pip install -r requirements.txt
 
 ## 🚀 Reproducing the Experiments
 The experiments use joblib for parallel execution to drastically speed up the Monte Carlo simulations. By default, they will use all available CPU cores (n_jobs=-1).
+
 You can reproduce the figures from the paper by running the scripts directly from the root directory:
 
 Figure 1: Improved performance with increasing offline data.
-Evaluates how the regret of OOPE decreases as the offline data horizon ($T_{off}$) increases.
+Evaluates how the regret of OOPE decreases as the offline data horizon ($T_{off}$) increases. Run:
+
 python scripts/run_fig1.py
 
 Figure 2: Comparison against Baselines
-Compares the performance of OOPE against warm-started LinUCB and warm-started LinTS.
+Compares the performance of OOPE against warm-started LinUCB and warm-started LinTS. Run:
+
 python scripts/run_fig2.py
 
 Figure 3: OOPE vs. OOPE-FW
-Compares the standard OOPE algorithm with its Frank-Wolfe variant (OOPE-FW) in a setting with small effective dimension and a large number of arms.
+Compares the standard OOPE algorithm with its Frank-Wolfe variant (OOPE-FW) in a setting with small effective dimension and a large number of arms. Run: 
+
 python scripts/run_fig3.py
 
 Figure 4: Performance gap across Effective Dimensions ($d_{eff})$.
-Calculates the $\Delta$ Regret between OOPE and OOPE-FW across different dimensions and horizons to show where the Frank-Wolfe approximation provides the most benefit.
+Calculates the $\Delta$ Regret between OOPE and OOPE-FW across different dimensions and horizons to show where the Frank-Wolfe approximation provides the most benefit. Run:
+
 python scripts/run_fig4.py
 
 ## ⚖️ License
