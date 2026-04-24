@@ -17,7 +17,9 @@ We consider the problem of online regret minimization in stochastic linear bandi
 ## ⚙️ Installation
 To run the code, you will need Python 3.8 or higher. We recommend using a virtual environment.
 Clone the repository:
+
 git clone https://github.com/vtnahsus/Offline_Online_Linear_Bandits_TMLR_paper_2026.git
+
 cd Offline_Online_Linear_Bandits_TMLR_paper_2026
 
 Install the required packages:
