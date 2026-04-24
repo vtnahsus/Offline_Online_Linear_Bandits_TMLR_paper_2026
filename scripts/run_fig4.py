@@ -22,12 +22,13 @@ if __name__ == "__main__":
     dimensions = [17, 20, 22]
     T_horizons =[2000, 20000, 100000]
     n_runs = 15
+    mode= "Uniform"
     
     for d in dimensions:
         K = d**2
         n_support = 3 * d
         
-        theta, A, optimal_arm, _ = problem_generation(d, K)
+        theta, A, optimal_arm, _ = problem_generation(d, K, mode)
         # Create base offline partition to fix the eigenspectrum 
         offline_frac_dict, _, V_pi_o, non_zero_arm = offline_data_generation(500000, n_support, theta, A, d)
         
