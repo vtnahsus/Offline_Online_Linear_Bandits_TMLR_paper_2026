@@ -35,8 +35,9 @@ if __name__ == "__main__":
     n_support = 40
     n_runs = 50
     T_range = np.arange(10000, 100000, 10000)
+    mode= "Uniform"
 
-    theta, A, optimal_arm, _ = problem_generation(d, K)
+    theta, A, optimal_arm, _ = problem_generation(d, K, mode)
     offline_frac_dict, _, V_pi_o, non_zero_arm = offline_data_generation(T_o, n_support, theta, A, d)
 
     jobs = [(algo, T) for algo in["OOPE", "LinUCB", "LinTS"] for T in T_range for _ in range(n_runs)]
