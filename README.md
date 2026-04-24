@@ -13,22 +13,6 @@ It provides the code to reproduce all theoretical bounds and numerical experimen
 ## 📖 Abstract
 We consider the problem of online regret minimization in stochastic linear bandits with access to prior observations (offline data). We introduce the **OOPE** algorithm, which effectively incorporates offline data to substantially reduce online regret by utilizing an extended D-optimal design. We also provide **OOPE-FW**, a Frank-Wolfe approximation to the extended optimal design, which improves the dimension dependence in the regret bound from $\mathcal{O}(d^2)$ to $\mathcal{O}(d^2 / d_{\text{eff}})$. 
 
-## 🗂️ Repository Structure
-
-The code is modularized for ease of use and readability:
-
-```text
-├── src/
-│   ├── __init__.py
-│   ├── utils.py          # Environment simulation, sub-optimality gaps, offline data generation
-│   └── algorithms.py     # Core algorithms: OOPE, OOPE-FW, Warm-started LinUCB & LinTS
-├── scripts/
-│   ├── run_fig1.py       # Exp 1: Performance with increasing offline data
-│   ├── run_fig2.py       # Exp 2: Comparison against LinUCB and LinTS baselines
-│   ├── run_fig3.py       # Exp 3: Performance of OOPE vs OOPE-FW
-│   └── run_fig4.py       # Exp 4: Regret difference over effective dimension (d_eff)
-├── requirements.txt      # Python dependencies
-└── README.md
 
 ## ⚙️ Installation
 To run the code, you will need Python 3.8 or higher. We recommend using a virtual environment.
