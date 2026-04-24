@@ -27,7 +27,7 @@ pip install -r requirements.txt
 The experiments use joblib for parallel execution to drastically speed up the Monte Carlo simulations. By default, they will use all available CPU cores (n_jobs=-1).
 You can reproduce the figures from the paper by running the scripts directly from the root directory:
 
-Figure 1: Improved performance with increasing offline data
+Figure 1: Improved performance with increasing offline data.
 Evaluates how the regret of OOPE decreases as the offline data horizon ($T_{off}$) increases.
 python scripts/run_fig1.py
 
@@ -39,7 +39,7 @@ Figure 3: OOPE vs. OOPE-FW
 Compares the standard OOPE algorithm with its Frank-Wolfe variant (OOPE-FW) in a setting with small effective dimension and a large number of arms.
 python scripts/run_fig3.py
 
-Figure 4: Performance gap across Effective Dimensions ($d_{eff}$
+Figure 4: Performance gap across Effective Dimensions ($d_{eff})$.
 Calculates the $\Delta$ Regret between OOPE and OOPE-FW across different dimensions and horizons to show where the Frank-Wolfe approximation provides the most benefit.
 python scripts/run_fig4.py
 
