@@ -25,7 +25,7 @@ cd Offline_Online_Linear_Bandits_TMLR_paper_2026
 
 Install the required packages:
 
-pip install -r requirements.txt
+pip install -r requirement.txt
 
 ## 🚀 Reproducing the Experiments
 The experiments use joblib for parallel execution to drastically speed up the Monte Carlo simulations. By default, they will use all available CPU cores (n_jobs=-1).
