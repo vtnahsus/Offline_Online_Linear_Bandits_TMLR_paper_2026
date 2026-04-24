@@ -3,7 +3,7 @@ Code for experiments run in the Offline to Online in Linear Bandits paper.
 # Regret Minimization in Linear Bandits with Offline Data
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 This repository contains the official implementation of the paper:
 **"Regret minimization in Linear Bandits with offline data via extended D-optimal exploration"** *(Under review at TMLR)*.
