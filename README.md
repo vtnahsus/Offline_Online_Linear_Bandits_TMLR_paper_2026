@@ -30,7 +30,7 @@ The code is modularized for ease of use and readability:
 ├── requirements.txt      # Python dependencies
 └── README.md
 
-⚙️ Installation
+**## ⚙️ Installation**
 To run the code, you will need Python 3.8 or higher. We recommend using a virtual environment.
 Clone the repository:
 git clone https://github.com/vtnahsus/Offline_Online_Linear_Bandits_TMLR_paper_2026.git
@@ -39,7 +39,7 @@ cd Offline_Online_Linear_Bandits_TMLR_paper_2026
 Install the required packages:
 pip install -r requirements.txt
 
-🚀 Reproducing the Experiments
+**🚀 Reproducing the Experiments**
 The experiments use joblib for parallel execution to drastically speed up the Monte Carlo simulations. By default, they will use all available CPU cores (n_jobs=-1).
 You can reproduce the figures from the paper by running the scripts directly from the root directory:
 
@@ -59,5 +59,5 @@ Figure 4: Performance gap across Effective Dimensions ($d_{eff}$
 Calculates the $\Delta$ Regret between OOPE and OOPE-FW across different dimensions and horizons to show where the Frank-Wolfe approximation provides the most benefit.
 python scripts/run_fig4.py
 
-⚖️ License
+**⚖️ License**
 This project is licensed under the Apache 2.0 License - see the LICENSE file for details.
