@@ -11,7 +11,7 @@ from src.utils import problem_generation, offline_data_generation, repeated_offl
 from src.algorithms import OOPE
 
 def run_experiment(toff, T, non_zero_arm, offline_frac_dict, A, d, optimal_arm, theta, V_pi_o):
-    offline_data_dict = repeated_offline_data_generation(toff, non_zero_arm, offline_frac_dict)
+    offline_data_dict = repeated_offline_data_generation(toff, non_zero_arm, offline_frac_dict,theta,A)
     regret = OOPE(T, A, d, non_zero_arm, toff, optimal_arm, theta, V_pi_o, offline_frac_dict, offline_data_dict)
     return toff, regret
 
