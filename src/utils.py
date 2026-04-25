@@ -109,7 +109,7 @@ def offline_data_generation(T_o,non_zero_support,theta,A,d):
 # Input: T_o -total number of offline samples, non_zero_arms-number of support points, offline_frac_dict-fraction of offline data .
 # Output: A dictionary with keys as arm indices with regenerated offline data.
 
-def repeated_offline_data_generation(T_o,non_zero_arm,offline_frac_dict):
+def repeated_offline_data_generation(T_o,non_zero_arm,offline_frac_dict,theta,A):
   offline_data_dict={}
   offline_frac=np.zeros(len(A))
   temp_actual=0
