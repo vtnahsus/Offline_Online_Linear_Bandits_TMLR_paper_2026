@@ -137,7 +137,7 @@ def compute_d_e(T_o,T,V_pi_o):
   if(T_o*lambda_min >0):
     return(np.minimum(np.sum(1/(1+(T_o/T)*eigenvalues.real)),T/(T_o*lambda_min)))
   else:
-    return(np.sum(1/(1+(T_o/T)*eigenvalues.real))
+    return(np.sum(1/(1+(T_o/T)*eigenvalues.real)))
 
 def find_toff(d_e,T,V_pi_o):
     objective = lambda x: compute_d_e(x,T,V_pi_o) - d_e
