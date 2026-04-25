@@ -134,7 +134,10 @@ def repeated_offline_data_generation(T_o,non_zero_arm,offline_frac_dict,theta,A)
 def compute_d_e(T_o,T,V_pi_o):
   eigenvalues=np.linalg.eigvals(V_pi_o)
   lambda_min=np.min(eigenvalues.real)
-  return(np.minimum(np.sum(1/(1+(T_o/T)*eigenvalues.real)),T/(T_o*lambda_min)))
+  if(T_o*lambda_min >0):
+    return(np.minimum(np.sum(1/(1+(T_o/T)*eigenvalues.real)),T/(T_o*lambda_min)))
+  else:
+    return(np.sum(1/(1+(T_o/T)*eigenvalues.real))
 
 def find_toff(d_e,T,V_pi_o):
     objective = lambda x: compute_d_e(x,T,V_pi_o) - d_e
