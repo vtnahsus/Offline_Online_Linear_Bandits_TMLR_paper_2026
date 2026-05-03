@@ -21,7 +21,7 @@ def evaluate_gap(d_eff, T, non_zero_arm, offline_frac_dict, A, d, optimal_arm, t
 if __name__ == "__main__":
     dimensions = [17, 20, 22]
     T_horizons =[2000, 20000, 100000]
-    n_runs = 1
+    n_runs = 15
     mode= "Uniform"
     
     for d in dimensions:
