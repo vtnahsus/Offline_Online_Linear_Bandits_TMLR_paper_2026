@@ -11,7 +11,7 @@ from src.utils import problem_generation, offline_data_generation, repeated_offl
 from src.algorithms import OOPE
 
 def run_oope_variants(T, use_fw, non_zero_arm, offline_frac_dict, A, d, optimal_arm, theta, V_pi_o, T_o):
-    print("FW is",use_fw)
+    print("FW is",use_fw,"for online horizon",T)
     offline_data_dict = repeated_offline_data_generation(T_o, non_zero_arm, offline_frac_dict, theta, A)
     regret = OOPE(T, A, d, non_zero_arm, T_o, optimal_arm, theta, V_pi_o, offline_frac_dict, offline_data_dict, use_fw=use_fw)
     return use_fw, T, regret
