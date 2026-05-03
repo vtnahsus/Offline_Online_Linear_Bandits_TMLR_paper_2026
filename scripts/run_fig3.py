@@ -21,7 +21,7 @@ if __name__ == "__main__":
     K = 900
     T_o = 1000000
     n_support = 100
-    n_runs = 50
+    n_runs = 1
     T_range = np.arange(1000, 10000, 1000)
     mode= "Uniform"
 
